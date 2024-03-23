@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F141EF44-5072-4C62-83C7-C9814721ADD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Template.ProjectStructure", "src\CleanArch.Template.ProjectStructure\CleanArch.Template.ProjectStructure.csproj", "{6C9E8B69-4C1D-4069-9FED-0EC348870A29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Template.MinimalSolution", "src\CleanArch.Template.MinimalSolution\CleanArch.Template.MinimalSolution.csproj", "{6C9E8B69-4C1D-4069-9FED-0EC348870A29}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{54328C18-3744-4D75-B3EB-4FC05F155EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Template.ProjectStructure.Test", "test\CleanArch.Template.ProjectStructure.Test\CleanArch.Template.ProjectStructure.Test.csproj", "{EABB513C-10FD-47E0-8B84-415D8ADF51C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Template.MinimalSolution.Test", "test\CleanArch.Template.MinimalSolution.Test\CleanArch.Template.MinimalSolution.Test.csproj", "{EABB513C-10FD-47E0-8B84-415D8ADF51C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

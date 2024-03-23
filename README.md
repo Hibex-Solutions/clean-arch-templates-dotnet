@@ -1,2 +1,3 @@
-# clean-arch-templates-dotnet
-Clean Architecture Core .NET Templates
+# CleanArch.Template.MinimalSolution
+
+Minimal Solution for Clean Architecture .NET Template.

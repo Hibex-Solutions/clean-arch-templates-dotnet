@@ -35,7 +35,7 @@ dotnet_analyzer_diagnostic.category-Documentation.severity = error
 # Organize usings
 dotnet_separate_import_directive_groups = true
 dotnet_sort_system_directives_first = true
-file_header_template = Copyright (c) CleanArch.Template.ProjectStructure Team. All rights reserved.\nThis file is a part of CleanArch.Template.ProjectStructure.\nLicensed under the Apache version 2.0: LICENSE file.
+file_header_template = Copyright (c) CleanArch.Template.MinimalSolution Team. All rights reserved.\nThis file is a part of CleanArch.Template.MinimalSolution.\nLicensed under the Apache version 2.0: LICENSE file.
 
 # this. and Me. preferences
 dotnet_style_qualification_for_event = false:silent
