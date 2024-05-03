@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup dotNET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Restore tools
+        run: dotnet tool restore
+
+      - name: GitVersion
+        run: dotnet tool run dotnet-gitversion -- /updateprojectfiles ./CleanArch.Templates.csproj
+
+      - name: Restore dependencies
+        run: dotnet restore ./CleanArch.Templates.csproj
+
+      - name: Build
+        run: dotnet build ./CleanArch.Templates.csproj --configuration Release --no-restore
+
+      - name: Pack
+        run: dotnet pack ./CleanArch.Templates.csproj --configuration Release --output ./artifacts
+
+      - name: Check
+        run: ls -lha ./artifacts
+
+      # - name: Push
+      #   run: dotnet nuget push ./artifacts/CleanArch.Templates.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+      #   env:
+      #     NUGET_TOKEN: ${{ secrets.NUGET_CLEANARCH_TOKEN }}
