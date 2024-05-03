@@ -1,3 +1,3 @@
-# CleanArch.Template.MinimalSolution
+# Templates .NET CleanArch
 
-Minimal Solution for Clean Architecture .NET Template.
+Templates .NET para projetos baseados em CleanArch

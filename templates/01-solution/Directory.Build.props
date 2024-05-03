@@ -1,0 +1,13 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <Company>Time CleanArch.Templates.Solution</Company>
+    <Product>CleanArch.Templates.Solution</Product>
+    <Copyright>Copyright (c) Time CleanArch.Templates.Solution</Copyright>
+    <Authors>$(Company)</Authors>
+    <AnalysisLevel>8.0-All</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <LangVersion>12</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+</Project>

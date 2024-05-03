@@ -1,6 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <AnalysisLevel>8.0-All</AnalysisLevel>
-    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-  </PropertyGroup>
-</Project>
