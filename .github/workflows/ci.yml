@@ -23,21 +23,21 @@ jobs:
         run: dotnet tool restore
 
       - name: GitVersion
-        run: dotnet tool run dotnet-gitversion -- /updateprojectfiles ./CleanArch.Templates.csproj
+        run: dotnet tool run dotnet-gitversion -- /updateprojectfiles ./CleanArch.Templates.Net.csproj
 
       - name: Restore dependencies
-        run: dotnet restore ./CleanArch.Templates.csproj
+        run: dotnet restore ./CleanArch.Templates.Net.csproj
 
       - name: Build
-        run: dotnet build ./CleanArch.Templates.csproj --configuration Release --no-restore
+        run: dotnet build ./CleanArch.Templates.Net.csproj --configuration Release --no-restore
 
       - name: Pack
-        run: dotnet pack ./CleanArch.Templates.csproj --configuration Release --output ./artifacts
+        run: dotnet pack ./CleanArch.Templates.Net.csproj --configuration Release --output ./artifacts
 
       - name: Check
-        run: ls -lha ./artifacts
+        run: ls -lha ./artifacts && git --no-pager diff
 
       # - name: Push
-      #   run: dotnet nuget push ./artifacts/CleanArch.Templates.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+      #   run: dotnet nuget push ./artifacts/CleanArch.Templates.Net.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
       #   env:
       #     NUGET_TOKEN: ${{ secrets.NUGET_CLEANARCH_TOKEN }}
