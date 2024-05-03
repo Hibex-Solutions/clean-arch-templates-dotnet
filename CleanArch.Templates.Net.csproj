@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>CleanArch.Templates</PackageId>
+    <PackageId>CleanArch.Templates.Net</PackageId>
     <Version>0.1.0</Version>
     <PackageVersion>$(Version)</PackageVersion>
     <Title>Templates .NET CleanArch</Title>
